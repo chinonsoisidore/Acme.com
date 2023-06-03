@@ -1,0 +1,344 @@
+/* First stage "general body" */
+body {
+  font: 15px/1.5 Arial, Helvetica, sans-serif;
+  padding: 0px;
+  margin: 0px;
+  background-color: #f4f4f4;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+/* Second stage "header" */
+header {
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background: #35424a;
+  border-bottom: 3px solid #e8491d;
+}
+
+nav {
+  float: right;
+}
+
+ul {
+  list-style-type: none;
+  margin-top: -50px;
+}
+
+li {
+  display: inline;
+  margin-right: 20px;
+}
+
+a {
+  font-size: 15px;
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: #ada7a7;
+}
+
+.current {
+  color: #e8491d;
+}
+
+#branding h1 {
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+}
+
+.highlight {
+  color: #e8491d;
+}
+
+/* Third stage "showcase" */
+#showcase {
+  border-bottom: 3px solid #e8491d;
+  margin-top: -100px;
+  min-height: 400px;
+  background: url('laptop-photo.jpg') no-repeat center center;
+  background-size: cover;
+  text-align: center;
+  color: white;
+}
+
+
+#showcase h1 {
+  padding-top: 100px;
+  margin-top: 100px;
+  font-size: 55px;
+  margin-bottom: 10px;
+}
+
+#showcase p {
+  font-size: 20px;
+}
+
+/* Fourth stage "Newsletter" */
+#Newslatter {
+  min-height: 70px;
+  padding: 15px;
+  color: white;
+  background: #35424a;
+}
+
+#Newslatter h1 {
+  float: left;
+}
+
+#Newslatter form {
+  float: right;
+}
+
+#Newslatter .Email {
+  border: none;
+  border-radius: none;
+  padding: 4px;
+  height: 25px;
+  width: 250px;
+  margin-top: 15px;
+}
+
+.button-1 {
+  border: none;
+  color: white;
+  padding-right: 20px;
+  padding-left: 20px;
+  height: 34px;
+  background: #e8491d;
+}
+
+/* Fifth stage "logos" */
+.container1 {
+  margin-top: 10px;
+  min-height: auto;
+  min-width: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.box {
+  width: 300px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.html,
+.css3,
+.Graphic {
+  width: 25%;
+}
+
+/* Sixth stage "about" */
+.main-article {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.article-1 {
+  margin-right: 10%;
+  width: 60%;
+}
+
+.article-2 {
+  padding: 15px;
+  color: white;
+  background: #35424a;
+  width: 30%;
+  height: 230px;
+}
+
+.dark {
+  color: white;
+  padding: 15px;
+  background: #35424a;
+}
+
+/* services */
+.service-article {
+  margin-right: 10%;
+  width: 60%;
+}
+
+.list {
+  padding: 20px;
+  border: #cccccc solid 1px;
+  background: #e6e6e6;
+  margin-bottom: 3px;
+}
+
+.article-3 {
+  padding: 15px;
+  color: white;
+  background: #35424a;
+  width: 30%;
+  height: 260px;
+}
+
+.input {
+  width: 90%;
+}
+
+footer {
+  padding: 5px;
+  margin-top: 10px;
+  text-align: center;
+  color: white;
+  background: #e8491d;
+}
+
+/* Media Queries */
+
+/* Adjustments for smaller screens */
+@media screen and (max-width: 1024px) {
+
+  #showcase h1 {
+    font-size: 40px;
+  }
+
+  .article-1,
+  .article-2,
+  .service-article {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .article-2 {
+    height: 290px;
+  }
+
+  .article-3 {
+    height: auto;
+  }
+
+  #Newslatter {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  #Newslatter h1,
+  #Newslatter form {
+    float: none;
+  }
+
+  #Newslatter .Email {
+    margin: 15px auto;
+    display: block;
+    width: 80%;
+  }
+
+  .button-1 {
+    margin: 15px auto;
+    display: block;
+    width: 80%;
+  }
+
+  .container1,
+  .main-article {
+    flex-direction: row;
+    width: 80%;
+    margin: auto;
+  }
+
+  .article-3 {
+    height: 290px;
+    margin-left: 10%;
+    margin-top: 20px;
+    width: 90%;
+  }
+
+  .article-2 {
+    margin-left: 10%;
+    width: 90%;
+  }
+}
+
+/* Adjustments for smaller tablets */
+@media screen and (max-width: 768px) {
+
+  header {
+    flex-direction: column;
+    height: auto;
+  }
+
+  nav {
+    float: none;
+  }
+
+  #branding h1,
+  ul {
+    margin-top: 0;
+    text-align: center;
+  }
+
+  #showcase h1 {
+    font-size: 30px;
+  }
+
+  .box {
+    width: 100%;
+    margin-right: 20px;
+  }
+
+  .html,
+  .css3,
+  .Graphic {
+    width: 25%;
+  }
+
+  .container1,
+  .main-article {
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+  }
+
+  .article-2,
+  .article-3 {
+    margin-left: 0%;
+  }
+
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+/* Adjustments for smaller mobile devices */
+@media screen and (max-width: 480px) {
+  #showcase h1 {
+    font-size: 30px;
+  }
+
+  .box {
+    width: 100%;
+  }
+
+  .html,
+  .css3,
+  .Graphic {
+    width: 30%;
+    margin-right: 0;
+  }
+
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
